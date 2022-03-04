@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:passport_maker/constant/assest_path.dart';
 import 'package:passport_maker/constant/constant_colors.dart';
+import 'package:passport_maker/module/choose_photo_size/screens/choose_resolution.dart';
 
 class ChooseCountry extends StatelessWidget {
   const ChooseCountry({Key? key}) : super(key: key);
@@ -22,7 +23,7 @@ class ChooseCountry extends StatelessWidget {
             showDialog(
                 context: context,
                 builder: (ctx) {
-                  return const ChooseCountry();
+                  return const Dialog(child: ChooseResolution());
                 });
           },
           child: Row(
