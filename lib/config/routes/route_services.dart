@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:passport_maker/module/choose_photo_size/screens/choose_photo_size_screen.dart';
 import 'package:passport_maker/module/home/screens/home_screen.dart';
 
 class RouteServices {
@@ -9,6 +10,11 @@ class RouteServices {
       case "/":
         return CupertinoPageRoute(builder: (_) {
           return const HomeScreen();
+        });
+
+      case "/choosephotosizePage":
+        return CupertinoPageRoute(builder: (_) {
+          return const ChoosePhotoSizeScreen();
         });
       default:
         return _errorRoute();
