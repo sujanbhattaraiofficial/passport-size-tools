@@ -27,7 +27,10 @@ class HomeScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.pushNamed(context, "/choosephotosizePage");
                   },
-                  child: _choosePhotoUi())
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: _choosePhotoUi(),
+                  ))
             ],
           ),
         ),
